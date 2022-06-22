@@ -9,7 +9,7 @@ export const UserStats = ({ userStats: { followers, views, likes } }) => (
     </li>
     <li>
       <span className={styles.label}>Views</span>
-      <span className={styles.quantity}>{views}</span>
+      <span className={styles.quantity}>{getComma(views)}</span>
     </li>
     <li>
       <span className={styles.label}>Likes</span>
@@ -17,6 +17,11 @@ export const UserStats = ({ userStats: { followers, views, likes } }) => (
     </li>
   </ul>
 );
+
+function getComma(number) {
+  const string = String(number);
+  return `${string.slice(0, 1)},${string.slice(1)}`;
+}
 
 UserStats.propTypes = {
   userStats: PropTypes.exact({

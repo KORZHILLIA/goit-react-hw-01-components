@@ -2,10 +2,10 @@ import PropTypes from 'prop-types';
 import styles from './TransactionItem.module.css';
 
 export const TransactionItem = ({ id, amount, currency, type }) => (
-  <tr>
-    <td>{type}</td>
-    <td>{amount}</td>
-    <td>{currency}</td>
+  <tr className={styles.tableRow}>
+    <td className={styles.tableCell}>{type}</td>
+    <td className={styles.tableCell}>{amount}</td>
+    <td className={styles.tableCell}>{currency}</td>
   </tr>
 );
 
