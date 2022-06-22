@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types';
 import styles from './UserStats.module.css';
 
-export const UserStats = ({ userStats: { followers, views, likes } }) => (
+const UserStats = ({ userStats: { followers, views, likes } }) => (
   <ul className={styles.stats}>
     <li>
       <span className={styles.label}>Followers</span>
@@ -17,6 +17,8 @@ export const UserStats = ({ userStats: { followers, views, likes } }) => (
     </li>
   </ul>
 );
+
+export default UserStats;
 
 function getComma(number) {
   const string = String(number);

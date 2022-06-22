@@ -1,8 +1,8 @@
 import PropTypes from 'prop-types';
-import { StatList } from './StatList/StatList';
+import StatList from './StatList';
 import styles from './Statistics.module.css';
 
-export const Statistics = ({ title, stats }) => (
+const Statistics = ({ title, stats }) => (
   <section className={styles.statistics}>
     {title && <h2 className={styles.title}>{title}</h2>}
     <ul className={styles.statList}>
@@ -12,6 +12,8 @@ export const Statistics = ({ title, stats }) => (
     </ul>
   </section>
 );
+
+export default Statistics;
 
 Statistics.propTypes = {
   title: PropTypes.string,

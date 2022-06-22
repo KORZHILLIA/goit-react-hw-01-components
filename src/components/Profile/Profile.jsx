@@ -1,8 +1,8 @@
 import PropTypes from 'prop-types';
-import { UserStats } from './UserStats/UserStats';
+import UserStats from './UserStats';
 import styles from './Profile.module.css';
 
-export const Profile = ({
+const Profile = ({
   user: { avatar, location, tag, stats, username: userName },
 }) => (
   <div className={styles.profile}>
@@ -21,6 +21,8 @@ export const Profile = ({
     <UserStats userStats={stats} />
   </div>
 );
+
+export default Profile;
 
 Profile.propTypes = {
   user: PropTypes.shape({
