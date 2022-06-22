@@ -1,0 +1,16 @@
+.transactionHistory {
+    border-radius: 3px;
+    box-shadow: 0 2px 1px 1px black;
+    background-color: #fff;
+    border-collapse: collapse;
+}
+
+th {
+    padding: 10px 40px;
+    background-color: #ccf;
+    color: white;
+}
+
+th:not(:last-child) {
+    border-right: 1px solid whitesmoke;
+}

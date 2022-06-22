@@ -1,0 +1,30 @@
+.profile {
+    max-width: 40%;
+    margin: 0 auto 40px;
+    background-color: #fff;
+    border-radius: 4px;
+    overflow: hidden;
+    box-shadow: 0 2px 2px 1px rgb(33, 33, 32);
+}
+
+.description {
+padding: 20px;
+text-align: center;
+}
+
+.avatar {
+    display: block;
+    margin: 0 auto 45px;
+    border-radius: 50%;
+}
+
+.name {
+    font-size: 26px;
+    font-weight: 700;
+}
+
+.tag,
+.location {
+    color: rgb(81, 79, 79);
+    font-size: 21px;
+}

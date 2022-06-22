@@ -1,0 +1,28 @@
+.stats {
+    display: flex;
+    border-top: 1px solid gray;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(223, 220, 220);
+}
+
+.stats > li {
+    flex-basis: calc(100% / 3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+}
+.stats > li:not(:last-child) {
+    border-right: 1px solid gray;
+}
+
+.label {
+    color: rgb(81, 79, 79);
+}
+
+.quantity {
+    font-weight: 700;
+}
