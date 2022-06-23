@@ -1,4 +1,5 @@
 import PropTypes from 'prop-types';
+import getComma from '../../../utils/getComma';
 import styles from './userStats.module.css';
 
 const UserStats = ({ userStats: { followers, views, likes } }) => (
@@ -20,10 +21,9 @@ const UserStats = ({ userStats: { followers, views, likes } }) => (
 
 export default UserStats;
 
-function getComma(number) {
-  const string = String(number);
-  return `${string.slice(0, 1)},${string.slice(1)}`;
-}
+UserStats.defaultProps = {
+  userStats: {},
+};
 
 UserStats.propTypes = {
   userStats: PropTypes.exact({

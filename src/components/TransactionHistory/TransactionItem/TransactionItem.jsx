@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types';
 import styles from './transactionItem.module.css';
 
-const TransactionItem = ({ id, amount, currency, type }) => (
+const TransactionItem = ({ amount, currency, type }) => (
   <tr className={styles.tableRow}>
     <td className={styles.tableCell}>{type}</td>
     <td className={styles.tableCell}>{amount}</td>
@@ -11,8 +11,14 @@ const TransactionItem = ({ id, amount, currency, type }) => (
 
 export default TransactionItem;
 
+TransactionItem.defaultProps = {
+  type: '',
+  amount: '',
+  currency: '',
+};
+
 TransactionItem.propTypes = {
-  type: PropTypes.string.isRequired,
-  amount: PropTypes.string.isRequired,
-  currency: PropTypes.string.isRequired,
+  type: PropTypes.string,
+  amount: PropTypes.string,
+  currency: PropTypes.string,
 };

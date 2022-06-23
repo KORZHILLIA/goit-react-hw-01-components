@@ -17,8 +17,14 @@ function chooseClassColor(string) {
   return status.join(' ');
 }
 
+FriendListItem.defaultProps = {
+  avatar: '',
+  isOnline: false,
+  name: '',
+};
+
 FriendListItem.propTypes = {
-  avatar: PropTypes.string.isRequired,
-  isOnline: PropTypes.bool.isRequired,
-  name: PropTypes.string.isRequired,
+  avatar: PropTypes.string,
+  isOnline: PropTypes.bool,
+  name: PropTypes.string,
 };

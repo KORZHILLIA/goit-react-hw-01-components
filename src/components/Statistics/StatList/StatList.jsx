@@ -11,7 +11,12 @@ const StatList = ({ label, percentage }) => (
 
 export default StatList;
 
+StatList.defaultProps = {
+  label: '',
+  percentage: 0,
+};
+
 StatList.propTypes = {
-  label: PropTypes.string.isRequired,
-  percentage: PropTypes.number.isRequired,
+  label: PropTypes.string,
+  percentage: PropTypes.number,
 };
