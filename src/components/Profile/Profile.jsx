@@ -1,10 +1,8 @@
 import PropTypes from 'prop-types';
 import UserStats from './UserStats';
-import styles from './Profile.module.css';
+import styles from './profile.module.css';
 
-const Profile = ({
-  user: { avatar, location, tag, stats, username: userName },
-}) => (
+const Profile = ({ avatar, location, tag, stats, username: userName }) => (
   <div className={styles.profile}>
     <div className={styles.description}>
       <img
@@ -25,11 +23,9 @@ const Profile = ({
 export default Profile;
 
 Profile.propTypes = {
-  user: PropTypes.shape({
-    username: PropTypes.string.isRequired,
-    tag: PropTypes.string.isRequired,
-    location: PropTypes.string.isRequired,
-    avatar: PropTypes.string.isRequired,
-    stats: PropTypes.objectOf(PropTypes.number),
-  }),
+  username: PropTypes.string.isRequired,
+  tag: PropTypes.string.isRequired,
+  location: PropTypes.string.isRequired,
+  avatar: PropTypes.string.isRequired,
+  stats: PropTypes.objectOf(PropTypes.number).isRequired,
 };

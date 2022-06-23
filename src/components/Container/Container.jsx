@@ -1,5 +1,5 @@
 import PropTypes from 'prop-types';
-import styles from './Container.module.css';
+import styles from './container.module.css';
 
 const Container = ({ children }) => (
   <div className={styles.container}>{children}</div>

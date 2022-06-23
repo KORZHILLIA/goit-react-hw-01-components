@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types';
 import coloriser from '../../../utils/coloriser';
-import styles from './StatList.module.css';
+import styles from './statList.module.css';
 
 const StatList = ({ label, percentage }) => (
   <li className={styles.item} style={{ backgroundColor: coloriser() }}>

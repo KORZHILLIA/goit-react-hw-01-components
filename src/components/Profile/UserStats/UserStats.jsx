@@ -1,5 +1,5 @@
 import PropTypes from 'prop-types';
-import styles from './UserStats.module.css';
+import styles from './userStats.module.css';
 
 const UserStats = ({ userStats: { followers, views, likes } }) => (
   <ul className={styles.stats}>

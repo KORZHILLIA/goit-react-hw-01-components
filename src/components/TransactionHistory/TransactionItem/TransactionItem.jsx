@@ -1,5 +1,5 @@
 import PropTypes from 'prop-types';
-import styles from './TransactionItem.module.css';
+import styles from './transactionItem.module.css';
 
 const TransactionItem = ({ id, amount, currency, type }) => (
   <tr className={styles.tableRow}>
